@@ -3,48 +3,51 @@
 public class Item {
 	
 	
-	public Item(String itemName, String description, String storeDetails, int price) {
+	public Item(String itemName, String description, int price) {
 		super();
-		ItemName = itemName;
-		Description = description;
-		StoreDetails = storeDetails;
+		this.itemName = itemName;
+		this.description = description;
 		this.price = price;
 	}
 
-	private  String ItemName,Description,StoreDetails;
+	private  String itemName;
+	private  String description;
 	private  int price;
 	
+	
 	public String getItemName() {
-		return ItemName;
+		return itemName;
 	}
+
+
 	public void setItemName(String itemName) {
-		ItemName = itemName;
+		this.itemName = itemName;
 	}
+
+
 	public String getDescription() {
-		return Description;
+		return description;
 	}
+
+
 	public void setDescription(String description) {
-		Description = description;
+		this.description = description;
 	}
-	public String getStoreDetails() {
-		return StoreDetails;
-	}
-	public void setStoreDetails(String storeDetails) {
-		StoreDetails = storeDetails;
-	}
+
+
 	public int getPrice() {
 		return price;
 	}
+
+
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	
+
+
 	@Override
 	public String toString() {
-		return "Item [ItemName=" + ItemName + ", Description=" + Description + ", StoreDetails=" + StoreDetails
-				+ ", price=" + price + "]";
+		return "Item [itemName=" + itemName + ", description=" + description + ", price=" + price + "]";
 	}
-	
-	//Getters
 	
 }

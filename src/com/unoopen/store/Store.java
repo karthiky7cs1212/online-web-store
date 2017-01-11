@@ -20,12 +20,12 @@ public class Store {
 			String itemName = sc.nextLine();
 			String description = sc.nextLine();
 			int price = Integer.parseInt(sc.nextLine());
-			Item Ite = new Item(itemName, description, price);
-			list.add(Ite);
+			Item Item = new Item(itemName, description, price);
+			list.add(Item);
 		}
 
-		for (Item it : list) {
-			System.out.println(it.toString());
+		for (Item item : list) {
+			System.out.println(item.toString());
 		}
 	}
 }

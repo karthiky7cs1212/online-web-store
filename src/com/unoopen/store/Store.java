@@ -11,12 +11,12 @@ public class Store {
 
 		// get the input for number of Items:
 		System.out.println("Enter The number of Items:");
-		int no_of_items = Integer.parseInt(sc.nextLine());
+		int noOfItems = Integer.parseInt(sc.nextLine());
 
 		// Reading The Items
 		List<Item> list = new ArrayList<Item>();
 
-		for (int i = 0; i < no_of_items; i++) {
+		for (int i = 0; i < noOfItems; i++) {
 			String itemName = sc.nextLine();
 			String description = sc.nextLine();
 			int price = Integer.parseInt(sc.nextLine());
@@ -25,7 +25,7 @@ public class Store {
 		}
 
 		for (Item item : list) {
-			System.out.println(item.toString());
+			System.out.println(item);
 		}
 	}
 }

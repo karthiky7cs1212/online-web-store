@@ -1,7 +1,9 @@
 
-
 public class Item {
 	
+	private  String itemName;
+	private  String description;
+	private  int price;
 	
 	public Item(String itemName, String description, int price) {
 		super();
@@ -9,11 +11,6 @@ public class Item {
 		this.description = description;
 		this.price = price;
 	}
-
-	private  String itemName;
-	private  String description;
-	private  int price;
-	
 	
 	public String getItemName() {
 		return itemName;

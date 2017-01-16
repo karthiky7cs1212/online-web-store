@@ -18,27 +18,11 @@ public class Store {
 		// Item1	Pen	10
 		// Item2	Book 20
 		
-		Scanner sc = new Scanner(System.in);
+		ItemReader consoleReader = new ConsoleItemReader();
+		
+		List<Item> storeItems = consoleReader.read();
 
-		// get the input for number of Items:
-		System.out.println("Enter The number of Items:");
-		int noOfItems = Integer.parseInt(sc.nextLine());
-
-		// Reading The Items
-		List<Item> list = new ArrayList<Item>();
-
-		for (int i = 0; i < noOfItems; i++) {
-			System.out.println("Item Name:");
-			String itemName = sc.nextLine();
-			System.out.println("Item Description:");
-			String description = sc.nextLine();
-			System.out.println("Item Price:");
-			int price = Integer.parseInt(sc.nextLine());
-			Item Item = new Item(itemName, description, price);
-			list.add(Item);
-		}
-
-		for (Item item : list) {
+		for (Item item : storeItems) {
 			System.out.println(item);
 		}
 	}
